@@ -23,28 +23,28 @@ let teksnomor = (
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1])
 let teksbio = `
-┆⫹⫺ 💌 Nama : Zyko MD
+┆⫹⫺ 💌 Nama : Ferdi Firmansyah
 ┆⫹⫺ ♂️ Gender : Pria
 ┆⫹⫺ 🕋 Agama : Islam
-┆⫹⫺ ⏰ Tanggal lahir : 21 12 2004
+┆⫹⫺ ⏰ Tanggal lahir : 07 08 2004
 ┆⫹⫺ 🎨 Umur : 18
-┆⫹⫺ 🧮 Kelas : XI
-┆⫹⫺ 🧩 Hobby : Modifikasi Perangkat Lunak
-┆⫹⫺ 💬 Sifat : ASIK,BAIK,RAMAH
-┆⫹⫺ 🗺️ Tinggal : Indonesia, Sukabumi
+┆⫹⫺ 🧮 Kelas : XI SMA
+┆⫹⫺ 🧩 Hobby : Ngoding, Basket
+┆⫹⫺ 💬 Sifat : -
+┆⫹⫺ 🗺️ Tinggal : Indonesia, Banjarmasin, Kalsel
 ┆⫹⫺ ${sig}
 └––––––––––––·•
 `
 let ppown2 = await conn.profilePictureUrl(nomorown1 + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
-let teksbio2 = `┆⫹⫺ 💌 Nama : Lisa Amelia
-┆⫹⫺ ♂️ Gender : Wanita
-┆⫹⫺ 🕋 Agama : Islam
-┆⫹⫺ ⏰ Tanggal lahir : 27 - 02- 2006
-┆⫹⫺ 🎨 Umur : 17
-┆⫹⫺ 🧮 Kelas : XI
-┆⫹⫺ 🧩 Hobby : Banyak
-┆⫹⫺ 💬 Sifat : ASIK,BAIK,RAMAH
-┆⫹⫺ 🗺️ Tinggal : Indonesia, Bogor
+let teksbio2 = `┆⫹⫺ 💌 Nama :
+┆⫹⫺ ♂️ Gender :
+┆⫹⫺ 🕋 Agama :
+┆⫹⫺ ⏰ Tanggal lahir : 
+┆⫹⫺ 🎨 Umur : 
+┆⫹⫺ 🧮 Kelas : 
+┆⫹⫺ 🧩 Hobby :
+┆⫹⫺ 💬 Sifat : 
+┆⫹⫺ 🗺️ Tinggal : 
 ┆⫹⫺ ${sigpcr}
 └––––––––––––·•
 `
@@ -56,15 +56,15 @@ let teksbio2 = `┆⫹⫺ 💌 Nama : Lisa Amelia
 𐚀 Etikanya DiPake
 𐚀 Chat Cewek Gw Aneh-Aneh Gw Buat Tidur LU
 𐚀 Chat Aneh Gk Jelas Ban/Block 
-𐚀 Call Blcok\n⫹ Ketik *.rules* Untuk Melihat Rules Selengkapnya⫺`
+𐚀 Call Blcok\nKetik *.rules* Untuk Melihat Rules Selengkapnya`
 const sections = 
 [{
 title: `⫹⫺ OTHER ⫹⫺`,
 rows: [
 {title: "⸙ Kontak", rowId: ".owner kontak"},
 {title: "⸙ Nomor", rowId: ".owner nomor"},
-{title: "⸙ Biodata Zyko MD", rowId: ".owner bio"},
-{title: "⸙ Biodata Lisa Amelia", rowId: ".owner bio2"},
+{title: "⸙ Biodata Ferdi (Dev)", rowId: ".owner bio"},
+{title: "⸙ Biodata (-)", rowId: ".owner bio2"},
 {title: "⸙ Pengembang", rowId: ".zykomods"},
 {title: "⸙ Creator", rowId: ".zykomods1"},
 {title: "⸙ Script", rowId: ".sc"},
@@ -111,7 +111,7 @@ await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard
             case 'bio':
           //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
 
-   conn.sendButton(m.chat, '┍┈༺ *BioData ZykoMD* ༻', teksbio, ppown, [
+   conn.sendButton(m.chat, '┍┈༺ *BioData* ༻', teksbio, ppown, [
                 ['Sewa', `${usedPrefix}sewa`],
                 ['Menu', `${usedPrefix}menu`]
             ], m)
@@ -119,7 +119,7 @@ await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard
                         case 'bio2':
           //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
 
-          conn.sendButton(m.chat, '┍┈༺ *BioData LisaAmelia* ༻', teksbio2, ppown2, [
+          conn.sendButton(m.chat, '┍┈༺ *BioData* ༻', teksbio2, ppown2, [
                 ['Sewa', `${usedPrefix}sewa`],
                 ['Menu', `${usedPrefix}menu`]
             ], m)
